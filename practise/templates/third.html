@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+    
+    <div class="container">
+        {{data}}
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <form action="" method="post" class="p-5 border rounded shadow mt-5 ">
+                    {%  csrf_token %}
+                    <h2 class="d-flex justify-content-center mt-5">Travel Love</h2>
+                    <div class="form-group">
+                        <label for="">Travelcount</label>
+                         <input type="number" class="form-control" name="travelcount">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Traveltime</label>
+                         <input type="datetime-local" class="form-control" name="traveltime">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Travelplace</label>
+                         <input type="text" class="form-control" name="travelplace">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Vehicle</label>
+                         <input type="text" class="form-control" name="vehicle">
+                    </div>
+                    
+                    <div>
+                        <a href=""><button type="submit" class="btn btn-primary w-100 mt-3">Submit</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+    
+    
+
+    body{
+        background-image: url(images/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .nav-bar{
+       
+        display: flex;
+        
+        margin-top: 10px;
+    }
+
+    .nav-bar input{
+        margin-left: 1000px;
+        
+    }
+
+    .formclass{
+        position: fixed;
+        height: 700px;
+        overflow-y: scroll;
+        width: fit-content;
+        top: 0;
+        padding-bottom: 25px;
+        
+
+    }
+    .formclass::-webkit-scrollbar{
+        display: none;
+    }
+    .mysetup{
+     
+     background-color: rgb(223, 243, 255) !important;
+     width: 30%;
+    margin-left: 35%;
+    }
+    .newupdate{
+        display: flex;
+        gap: 150px;
+        margin-top: 10px;
+    }
+    .btn_click{
+         display: flex;
+         justify-content: center;
+         margin-top:-10px;
+         margin-right: 20px;
+         
+    }
+    .formclass {
+     width: 100%;
+    margin-left:-33%;
+    backdrop-filter: blur(30px);
+    display: none;
+   
+        
+    }
