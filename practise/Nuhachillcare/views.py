@@ -12,6 +12,7 @@ import json
 
 def service(request):
     customer=bhaiimodel.objects.all()
+    print("haii")
     if request.method=="POST":
         AC_ISSUE_CHARGES = {
         "Cooling Issues": 150,
