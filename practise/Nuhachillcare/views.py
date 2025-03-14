@@ -11,6 +11,7 @@ import json
 
 
 def service(request):
+    print("i am from siva branch")
     customer=bhaiimodel.objects.all()
     
     if request.method=="POST":
